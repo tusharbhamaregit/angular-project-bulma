@@ -8,6 +8,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { TeamComponent } from './team/team.component';
+import { TeamDetailsComponent } from './team-details/team-details.component';
+
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -18,7 +21,9 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     HomeComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    TeamComponent,
+    TeamDetailsComponent
   ],
   bootstrap: [AppComponent]
 })
