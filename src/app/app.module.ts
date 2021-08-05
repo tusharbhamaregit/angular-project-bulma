@@ -10,11 +10,19 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { TeamComponent } from './team/team.component';
 import { TeamDetailsComponent } from './team-details/team-details.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
+import { TeamListService } from './services/team-list.service';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, RouterModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule,
+    AppRoutingModule,
+    HttpClientModule
+  ],
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -25,6 +33,7 @@ import { AppRoutingModule } from './app-routing.module';
     TeamComponent,
     TeamDetailsComponent
   ],
+  providers: [TeamListService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
